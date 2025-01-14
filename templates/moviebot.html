@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MovieBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='moviebot.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="chatbox">
+      <div class="bot-message">Hi! I'm MovieBot. What movie genre are you interested in?</div>
+    </div>
+    <input type="text" id="textInput" placeholder="Type here..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='moviebot.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/popular_movies">Popular Movies</a></li>
+            <li><a href="/moviebot">MovieBot</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <!-- Welcome Message -->
+        <h1>Welcome to Movie Recommender System</h1>
+
+        <!-- Recommendation Search Bar -->
+        <form action="/recommend" method="POST">
+            <h2>Search for Recommendations</h2>
+            <select name="movie" class="movie-dropdown">
+                {% for movie in movies %}
+                <option value="{{ movie }}">{{ movie }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <!-- Recommended Movies -->
+        {% if recommendations %}
+        <h2>Recommended Movies</h2>
+        <div class="movies-container">
+            {% for name, poster, release_date in recommendations %}
+            <div class="movie-card">
+                <img src="{{ poster }}" alt="{{ name }}">
+                <h3>{{ name }}</h3>
+                <p>Release Date: {{ release_date }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

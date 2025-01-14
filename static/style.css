@@ -1,0 +1,167 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ffffff;
+  background-image: url("image.jpg");
+  line-height: 1.6;
+  padding: 20px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Center the main content a little bit upward */
+#content {
+  height: 100vh;
+  width: 100%;
+  background-image: url("image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps the background fixed during scrolling *
+  background-position: center;
+
+  /* Adjust vertical position */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Shift content upward */
+  align-items: center;
+  text-align: center;
+  padding-top: 150px; /* Adds vertical space at the top */
+  padding: 20px;
+}
+
+h1 {
+  color: #e50914;
+  font-weight: bold;
+  margin: 10px 0;
+  text-shadow: #000 0px 0px 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+select,
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #b20710;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px; /* Adds spacing between cards */
+}
+
+.movie-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 200px; /* Fixed width for uniformity */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden; /* Ensures no overflowing content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff; /* Optional: Adds a light background for better readability */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+.movie-poster {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+
+.movie-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+}
+.movie-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for the release date paragraph */
+.movie-card p {
+    font-size: 14px; /* Adjust font size */
+    color: #555; /* Soft gray color for readability */
+    margin-top: 8px; /* Space above the paragraph */
+    font-weight: 400; /* Normal weight */
+    text-align: center; /* Center align the text */
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+

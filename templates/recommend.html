@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    <div class="movies-container">
+        {% for name, poster in movies %}
+            <div class="movie-card">
+                <img src="{{ poster }}" alt="{{ name }}">
+                <h3>{{ name }}</h3>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
