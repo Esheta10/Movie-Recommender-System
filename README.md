@@ -19,13 +19,10 @@ A Flask-based web application that provides movie recommendations using a conten
 2. **Popular Movies Section**:
    - Displays a curated list of popular movies with posters and overviews.
 
-3. **Chatbot Interaction**:
-   - Users can interact with a bot to get personalized movie suggestions.
-
-4. **Dynamic Movie Posters**:
+3. **Dynamic Movie Posters**:
    - Movie posters are fetched from The Movie Database (TMDB) API for a visually engaging experience.
 
-5. **Robust Backend**:
+4. **Robust Backend**:
    - Preprocessed data for recommendations and popular movies is efficiently managed using pickle files.
 
 ---
