@@ -69,25 +69,23 @@ r](#)
 ## ⚙️ Setup and Installation
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/<your-username>/content-based-recommendation.git
    cd content-based-recommendation
 
-2. Create a virtual environment
-python -m venv venv
+2. Create a virtual environment:
+   # For macOS/Linux:
+   python -m venv venv
+   source venv/bin/activate
+   
+   # For Windows:
+   python -m venv venv
+   venv\Scripts\activate
 
-3. Activate the virtual environment
-# For macOS/Linux:
-source venv/bin/activate
-# For Windows:
-venv\Scripts\activate
+3. Install the required dependencies:
+   pip install -r requirements.txt
 
-4. Install the required dependencies
-pip install -r requirements.txt
+4. Run the application:
+   python app.py
 
-5. Run the application
-python app.py
-
-6. Open the application in your browser
-# Navigate to:
-http://127.0.0.1:5000/
+5. Open the application in your browser:
+   Navigate to http://127.0.0.1:5000/
