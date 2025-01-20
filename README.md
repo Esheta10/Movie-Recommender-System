@@ -6,10 +6,7 @@ A Flask-based web application that provides movie recommendations using a conten
 
 ## 🖼️ Project Overview
 
-![![image](https://github.com/user-attachments/assets/973b9ea0-db74-46d7-8272-0d636fa9277d)
-]()
-r](#)  
-*Add a screenshot or GIF of your application here to showcase its functionality.*
+![image](https://github.com/user-attachments/assets/973b9ea0-db74-46d7-8272-0d636fa9277d)
 
 ---
 
@@ -69,6 +66,7 @@ r](#)
 ## ⚙️ Setup and Installation
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/<your-username>/content-based-recommendation.git
    cd content-based-recommendation
 
