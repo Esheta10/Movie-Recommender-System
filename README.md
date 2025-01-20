@@ -72,18 +72,28 @@ A Flask-based web application that provides movie recommendations using a conten
 
 2. Create a virtual environment:
    # For macOS/Linux:
+     ```bash
    python -m venv venv
    source venv/bin/activate
-   
+    ```
    # For Windows:
+    ```bash
    python -m venv venv
    venv\Scripts\activate
+     ```
 
-3. Install the required dependencies:
+4. Install the required dependencies:
+    ```bash
    pip install -r requirements.txt
+      ```
 
-4. Run the application:
+5. Run the application:
+    ```bash
    python app.py
+     ```
 
-5. Open the application in your browser:
-   Navigate to http://127.0.0.1:5000/
+6. Open the application in your browser: 
+   Navigate to
+   ```bash
+   http://127.0.0.1:5000/
+     ```
